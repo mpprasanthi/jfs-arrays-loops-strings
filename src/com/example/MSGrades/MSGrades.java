@@ -22,8 +22,14 @@ public class MSGrades {
             System.out.println(student);
 
         }
-        
-    }
+     }
+
+     public void printStudentsGrades(int studentIndex){
+        System.out.println("Printing Students Grades");
+        System.out.println("Student Name: "+students.get(studentIndex));
+        System.out.println("Math Grade: "+mathGrades.get(studentIndex));
+
+     }
             
 
     public static void main(String[] args) {
@@ -34,6 +40,10 @@ public class MSGrades {
         System.out.println("====================");
 
         msGrade7.printStudents();
-
+        msGrade7.printStudentsGrades(1);
+        for (int i=0; i < 3 ; i++){
+            String teacherName = msGrade7.teachers[i];
+            System.out.println("Teacher is :" +teacherName);
+        }
     }
 }
